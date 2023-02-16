@@ -64,7 +64,7 @@ nav ul li a:hover {
 .active {
 	color: rgb(236, 236, 236);
 	border-radius: 5px;
-	background: linear-gradient(45deg, rgb(0, 0, 323), rgb(157, 172, 132));
+	background: linear-gradient(45deg, rgb(0, 0, 323), rgb(80, 18, 18));
 
 }
 
@@ -285,7 +285,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 980px) {
 body{
-  height: 2030px;
+  height: 2133px;
 }
 		.title {
 		   font-family: 'Open Sans', sans-serif;
@@ -296,8 +296,8 @@ body{
 }
 nav ul li a {
 font: bold;
-  margin-left: 0;
-  font-size: 54px;
+  margin-left: 20px;
+  font-size: 55px;
 }
 nav ul li  {
   margin-top: 30px;
@@ -308,7 +308,7 @@ nav ul li  {
 	flex-wrap: wrap;
 	justify-content:flex-start ;
 	align-items: center;
-	margin-top: 220px;
+	margin-top: -120px;
 }
 .ccardbox {
 	display: inline-block;
