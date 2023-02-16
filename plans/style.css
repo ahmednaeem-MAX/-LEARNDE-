@@ -211,7 +211,7 @@ span{
   .menu{
     margin-top: -300px;
     margin-right:-70px;
-    display:inline-block;
+    display:block;
     width: 120px;
     height: 100px;
   }
