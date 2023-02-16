@@ -3,39 +3,57 @@
 <head>
 	<link rel="shortcut icon" type="png" href="">
 	<title>Quiz on LearnEd</title>
+	<!-- <link rel="stylesheet" href="style1.css"> -->
+	<link rel="stylesheet" type="text/css" href="quizStyle.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	
 <!-- NAVIGATION -->
-<div class="container">
+<div class="container" id="container">
 <header id="header">
 	<nav>
 		<ul>
-			<li><a href="molkhas/tables.html" target="_blank">المنهج</a></li>
+			<li><a class="active" href="" >الصفحة الرئسية</a></li>
+			<!-- <li><a href="molkhas/tables.html" target="_blank">المنهج</a></li> -->
 			<li><a href="molkhas/molkhas.html" target="_blank">ملخصات</a></li>
 			<li><a href="quiz- him/index.html" target="_blank">اختبارات</a></li>
 			<li><a href="plans/index.html" target="_blank">المخطط اليومي</a></li>
 			<li><a id="bt" href="#" > رسالة اليوم</a></li>
 		</ul>
-		<a class="get-started" href="login.html">موقع المعهد</a>
+    
+    <a class="get-started" href="login.html">موقع المعهد</a>
 	</div>
+
+  <div class="side-menu" id="side-menu">
+    <div class="close" id="close" ><img src="images/icon/close.png" alt=""></div>
+
+    <ul>
+      <li><a class="" href="" >الصفحة الرئسية</a></li>
+			<li><a href="molkhas/tables.html" target="_blank">المنهج</a></li>
+			<li><a href="molkhas/molkhas.html" target="_blank">ملخصات</a></li>
+			<li><a href="quiz- him/index.html" target="_blank">اختبارات</a></li>
+			<li><a href="plans/index.html" target="_blank">المخطط اليومي</a></li>
+    </ul>
+  </div>
 </header>
 
 <!-- MAIN Heading of Page -->
 
-	<div>
-		<div hidden="none" id="message">
+	<div class="title" id="title">
+    <img src="images/icon/menu.png" class="menu" id="menu"  alt="menu">
 
-    </div>
-<div class="title">
+		<div hidden="none" id="message"></div>
+
 		<span>مسابقة يومية على LearnEd</span>
-<br>
-			<p style="font-size: 25px;">إذا كنت تعتقد أن التعليم مكلف ، فجرب الجهل</p>
-	<a class="start" href="quiz- him/index.html">	<button" >أبدء الأن</button></a>
+		<div class="shortdesc"><br>
+			<p>إذا كنت تعتقد أن التعليم مكلف ، فجرب الجهل</p>
+		</div>
+	<a class="start" id="start" href="quiz- him/index.html"><button id="button" >أبدء الأن</button></a>
+	</div>
+	</div>
 </div>
-
-
+</div>
 <script src="jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="script.js">
 
