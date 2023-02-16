@@ -404,7 +404,7 @@ background-repeat: no-repeat;
 
   .title .start button {
     margin-top: -800px;
-    margin-left: -135px;
+    margin-left: -1px;
     font-size: 80px;
     width: 110%;
     padding: 40px;
