@@ -375,7 +375,7 @@ background-repeat: no-repeat;
   }
   .menu{
     margin-top: -300px;
-    margin-right:-70px;
+    margin-right:10px;
     display:inline-block;
     width: 120px;
     height: 100px;
@@ -387,6 +387,7 @@ background-repeat: no-repeat;
     text-align: center;
     height: 2100px;
     width: 100%;
+	  
 
   }
 
@@ -405,7 +406,7 @@ background-repeat: no-repeat;
     margin-top: -800px;
     margin-left: -105px;
     font-size: 80px;
-    width: 133%;
+    width: 123%;
     padding: 40px;
     border: none;
     border-radius: 15px;
