@@ -20,7 +20,7 @@
 }
 span{
     color: rgba(255, 255, 255, 0.603);
-    font-size: 40px;
+    font-size: 30px;
     margin-right: 610px;
    
 }
@@ -73,6 +73,58 @@ tbody tr #th {
 /* //TABLE //*/
 
 /* //CONTAINER/ */
+
+/* responseve */
+@media screen and (max-width: 960px) {
+  .container{
+    margin-top: 40px;
+    margin-right:8-px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: rgb(236, 236, 236);
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 50px rgb(0 0 0 / 50%);
+    height: 600px;
+}
+
+  span{
+    font-size: 40px;
+    margin-right: 110px;
+   }
+/* TABLE */
+.styled-table{
+    color: rgb(207, 204, 204);
+    border: none;
+    border-radius: 15px;
+    
+    
+}
+
+    .styled-table tr th{
+      font-size: 30px;
+    background: rgb(3 3 54);    
+    border:solid 1px rgb(3 3 54); 
+    border-radius: 20px;
+        
+    }
+   
+tbody tr #th {
+    font-size: 30px;
+    background: #600000;
+    height: 90px;
+    border:solid 1px #600000; 
+}
+
+#co-one{
+    display: none;
+}
+.mo-two{
+  margin-top: -60px;
+}
+}
+/* //responseve// */
     </style>
 
 </head>
@@ -86,7 +138,7 @@ tbody tr #th {
             <thead>
                 <tr>
                     <th>أهداف أساسية</th>
-                    <th>أهداف مؤجلة</th>
+                    <th> مؤجل</th>
                 </tr>
             </thead>
             <tbody>
@@ -121,7 +173,7 @@ tbody tr #th {
 <hr>
 
 <!-- MONTH_TWO -->
-<div class="header">
+<div class="header-two">
     <span id="mo-two">شهر (2) </span>
 </div>
     <div id="co-two" class="container">
@@ -129,8 +181,9 @@ tbody tr #th {
             <thead>
                 <tr>
                     <th>أهداف أساسية</th>
-                    <th>أهداف مؤجلة</th>
-                </tr>
+                    <th>مؤجل</th>
+
+                  </tr>
             </thead>
             <tbody>
                 <tr>
@@ -171,6 +224,12 @@ tbody tr #th {
 
     $('#mo-one').click(function(){
   $("#co-one").slideToggle();
+ 
+
+});
+
+$('#mo-two').click(function(){
+  $("#co-two").slideToggle();
  
 
 });
