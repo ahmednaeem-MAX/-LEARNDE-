@@ -375,7 +375,7 @@ background-repeat: no-repeat;
   }
   .menu{
     margin-top: -300px;
-    margin-right:-90px;
+    margin-right:-70px;
     display:inline-block;
     width: 120px;
     height: 100px;
@@ -403,7 +403,7 @@ background-repeat: no-repeat;
 
   .title .start button {
     margin-top: -800px;
-    margin-left: -100px;
+    margin-left: -105px;
     font-size: 80px;
     width: 133%;
     padding: 40px;
