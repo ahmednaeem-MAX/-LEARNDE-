@@ -71,6 +71,48 @@ tbody tr #th {
     display: none;
 }
 /* //TABLE //*/
+nav {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	top: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	z-index: 1000;
+	color: rgb(236, 236, 236);
+	justify-content: space-around;
+	transition: 1.5s;
+	align-items: center;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+
+}
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	color: #2e2e2e;
+	cursor: pointer;
+	transition: .5s;
+	text-decoration: none;
+	color: rgb(236, 236, 236);
+	font-size: 20px;
+	font: bold;
+
+}
+nav ul li a:hover {
+	color: rgb(236, 236, 236);
+	border-radius: 5px;
+	background: rgb(39, 39, 223)
+}
+.active {
+	color: rgb(236, 236, 236);
+	border-radius: 5px;
+	background: linear-gradient(45deg, rgb(0, 0, 323), rgb(80, 18, 18));
+
+}
 
 /* //CONTAINER/ */
 
@@ -121,16 +163,42 @@ tbody tr #th {
     display: none;
 }
 .mo-two{
-  margin-top: -60px;
+  margin-top: -20px;
 }
+
+	
+
+nav ul li a {
+font: bold;
+  margin-left: 35px;
+  font-size: 27px;
+}
+nav ul li  {
+  margin-top: -10px;
+}
+.header{
+  margin-top: 80px;
+}
+
 }
 /* //responseve// */
     </style>
 
 </head>
 <body>
+  
 <!-- MONTH_ONE -->
+<nav>
+  <ul>
+    <li><a  href="../index.html">الرجوع</a></li>
+    <li><a href="../plans/index.html">المخطط</a></li>
+    <li><a href="../quiz- him/index.html">اختبارات</a></li>
+    <!-- <li><a href="#contactus_section">تاسكات مهمة</a></li> -->
+    <!-- <li><a id="bt" href="#" > رسالة اليوم</a></li> -->
+  </ul>
+</nav>
 <div class="header">
+  
     <span id="mo-one">شهر (1) </span>
 </div>
     <div id="co-one" class="container">
