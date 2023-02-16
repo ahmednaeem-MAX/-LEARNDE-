@@ -262,7 +262,6 @@ span{
 	top: 0;
 	transition: .8s;
 	z-index: 2000;
-	display: none;
 }
 .side-menu ul {
 	margin-top: 15%;
