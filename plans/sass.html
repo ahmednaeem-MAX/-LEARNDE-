@@ -1,261 +1,300 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REACT</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css "rel="stylesheet"/> -->
+    <link href="css/all.min.css " rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" /> -->
+    <link href="css/Fonts.css" rel="stylesheet" />
+
+    
+    <!-- MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" /> -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script> -->
+    <script src="css/iconify-icon.min.js"></script>
+
+    <title>You Quiz</title>
     <style>
-      body {
-       font-family: 'Open Sans', sans-serif;
-       direction: rtl;
-         background-repeat: no-repeat;
-        background-size: cover;
-        background: linear-gradient(45deg,rgb(0, 0, 113),rgb(96, 0, 0));
-     }
-     
-     /* HEADER */
-     nav {
-       padding-top: 20px;
-       padding-bottom: 20px;
-       top: 0;
-       position: fixed;
-       display: flex;
-       width: 100%;
-       z-index: 1000;
-       color: rgb(236, 236, 236);
-       justify-content: space-around;
-       transition: 1.5s;
-       align-items: center;
-     }
-     nav ul {
-       display: flex;
-       align-items: center;
-     
-     }
-     nav ul li {
-       list-style: none;
-     }
-     nav ul li a {
-       color: #2e2e2e;
-       cursor: pointer;
-       transition: .5s;
-       text-decoration: none;
-       color: rgb(236, 236, 236);
-       font-size: 20px;
-       font: bold;
-     
-     }
-     nav ul li a:hover {
-       color: rgb(236, 236, 236);
-       border-radius: 5px;
-       background: rgb(39, 39, 223)
-     }
-     .header{
-         margin-top: 20px;
-     }
-     span{
-         color: rgba(255, 255, 255, 0.603);
-         font-size: 40px;
-         margin-right: 610px;
-        
-     }
-     span:hover{
-         color: rgb(209, 204, 204)
-     
-     }
-     /* //HEADER// */
-          /* CONTAINER */
-     .container{
-         margin-top: 40px;
-         margin-right:8-px;
-         width: 100%;
-         border: none;
-         border-radius: 5px;
-         color: rgb(236, 236, 236);
-         outline: none;
-         cursor: pointer;
-         box-shadow: 0 0 50px rgb(0 0 0 / 50%);
-         height: 500px;
-     }
-     
-     /* TABLE */
-     .styled-table{
-         color: rgb(207, 204, 204);
-         border: none;
-         border-radius: 15px;
-         
-         
-     }
-     
-         .styled-table tr th{
-             font-size: 50px;
-         background: rgb(3 3 54);    
-         border:solid 1px rgb(3 3 54); 
-         border-radius: 20px;
-             
-         }
-         b{
-          color: rgb(5, 5, 71);    
-
-         }
-        
-     tbody tr #th {
-         font-size: 40px;
-         background: #600000;
-         height: 70px;
-         border:solid 1px #600000; 
-     }
-     
-     #co-one{
-         display: none;
-     }
-     /* //TABLE //*/
-     
-     /* //CONTAINER/ */
-     
-     /* responseve */
-      @media screen and (max-width: 1400px) {
-        .container{
-         margin-top: 40px;
-         margin-right:8-px;
-         width: 100%;
-         border: none;
-         border-radius: 5px;
-         color: rgb(236, 236, 236);
-         outline: none;
-         cursor: pointer;
-         box-shadow: 0 0 50px rgb(0 0 0 / 50%);
-         height: 1000px;
-     }
-      
-        span{
-         font-size: 40px;
-         margin-right: 110px;
+        body {
+          background: linear-gradient(45deg, rgb(0, 0, 113), rgb(96, 0, 0));
+            height: 900px;
+            direction: rtl;
+background-repeat: no-repeat;
         }
-     /* TABLE */
-     .styled-table{
-         color: rgb(207, 204, 204);
-         border: none;
-         border-radius: 15px;
-         
-         
-     }
-     
-         .styled-table tr th{
-           font-size: 40px;
-         background: rgb(3 3 54);    
-         border:solid 1px rgb(3 3 54); 
-         border-radius: 20px;
-             
-         }
+        .page-container{
+height: 1000px;
+        }
+
+        ol.ul,li {
+          margin-right: 20px;
+          font-size: 10px;
+
+        }
+
+    .button-start-quize {
+   margin-left: 10px;
+    margin-top: 50px;
+    width: 550px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(204, 201, 201);
+    background: linear-gradient(45deg, rgb(0, 0, 323), rgb(157, 172, 132));
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 50px rgb(0 0 0 / 50%);
+    height: 60px;
+}
+
+#btn-again-quiz{
+
+background:none;
+}
+
+#btn-again-quiz:hover{
+
+background:linear-gradient(45deg, rgb(0, 0, 323), rgb(192, 54, 54));
+
+}
+
+        .card-containere .card {
+            min-height: 75px;
+            color: black;
+        }
+
+
+        @media screen and (max-width: 1000px) {	
+	
+	.card-containere .card{
+        height:10px;
+        margin-top:-3px;
         
-     tbody tr #th {
-         font-size: 20px;
-         background: #600000;
-         height: 80px;
-         border:solid 1px #600000; 
-     }
-     
-     #co-one{
-         display: none;
-     }
-     nav ul li a {
-     font: bold;
-       margin-left: 45px;
-       font-size: 25px;
-     }
-     nav ul li  {
-       margin-top: -10px;
-     }
-     
+    }
+    /* .page-container{
+    } */
 
-    .header{
-      margin-bottom:50px;
 
-     }
-  
-  
-    } 
-     /* //responseve// */
-         </style>
-  </head>
+    .page-container{
+        height: 800px;
+    }
+}
+li{
+  width: 320px;
+}
 
-  <body>
-    <nav>
-      <ul>
-        <li><a  href="../index.html">الرجوع</a></li>
-        <li><a href="../plans/index.html">المخطط</a></li>
-        <li><a href="../quiz- him/index.html">اختبارات</a></li>
-      </ul>
-    </nav>
-    <!-- DAY-ONE -->
-    <div class="header" style="margin-top:110px;">
-      <span id="qa-one"> 2/2 : 2/9</span>
+
+
+        .progress-bar-container .bar {
+            background: linear-gradient(45deg, rgb(0, 0, 113), rgb(219, 202, 202));
+
+        }
+
+        .resulte-body {
+            color: whitesmoke;
+        }
+
+        .progress-bar-container iconify-icon {
+            color: #8888c7;
+        }
+
+        .carde-2 {
+    
+    background-color: #119783;
+}
+
+.carde-2:hover {
+    
+    background-color: #0d7767;
+}
+    </style>
+</head>
+
+<body>
+    <div class="page-container" style="direction: rtl;
+    background: linear-gradient(45deg, rgb(0, 0, 113), rgb(96, 0, 0)); background-repeat: no-repeat;">
+        <p class="progress-barr-title" id="progress-barr-title-id" style="color: rgb(199, 196, 196);">التعليمات</p>
+        <!-- progress-bar-container -->
+        <div class="progress-bar-container ">
+            <div class="bar d-none" id="bar-1-id"></div>
+            <div onclick="chancheContent(1)" class="circle-container">
+                <div class="circle" style="background:rgb(0 63 135);" id="circle-1-id">1</div>
+            </div>
+            <div class="bar" id="bar-2-id"></div>
+            <div onclick="chancheContent(2)" class="circle-container">
+                <div class="circle" style="background:rgb(0 63 135);" id="circle-2-id">2</div>
+            </div>
+            <div class="bar" id="bar-3-id"></div>
+            <div onclick="chancheContent(3)" class="circle-container">
+                <div class="circle" style="background:rgb(0 63 135);" id="circle-3-id">3</div>
+            </div>
+            <iconify-icon id="sound-on-id" icon="mdi:music"></iconify-icon>
+            <iconify-icon id="sound-off-id" icon="mdi:music-off"></iconify-icon>
+
+        </div>
+        <!--// progress-bar-container //-->
+
+        <!-- inforamation -->
+        <div class="documentation-body" id="documentation-body-id">
+            <section style="margin-left:30px;" id="documentation-section-id">
+                <ol>
+                    <li style="color: rgb(219, 217, 217); font-size: 20px;">هناك 3 مراحل يمكنك التنقل خلالها من خلال النقر على الأزرار
+                        الموجودة في الأعلى.</li>
+                    <li style="color: rgb(219, 217, 217);font-size: 20px;">كل سؤال له محدد حسب الصعوبة ، وتعتبر الإجابة ملغاة إذا
+                        تجاوزت الوقت المحدد</li>
+                    <li style="color: rgb(219, 217, 217);font-size: 20px;">في كل مرة تظهر الأسئلة بشكل عشوائي.</li>
+                    <li style="color: rgb(219, 217, 217);font-size: 20px;">بمجرد الانتهاء من جميع الأسئلة ، ستظهر النتائج في مكانها
+                        المحدد.</li>
+                    <li style="color: rgb(219, 217, 217);font-size: 20px;">حظ سعيد.</li>
+                </ol>
+            </section>
+        </div>
+        <!--// inforamation //-->
+        <!-- timer -->
+        <div id="timer-id" class="demo">
+            <div class="demo__colored-blocks">
+                <div class="demo__colored-blocks-rotater">
+                    <div class="demo__colored-block"></div>
+                    <div class="demo__colored-block"></div>
+                    <div class="demo__colored-block"></div>
+                </div>
+                <div class="demo__colored-blocks-inner"></div>
+                <div class="demo__text">Ready</div>
+            </div>
+            <div class="demo__inner">
+                <svg class="demo__numbers" viewBox="0 0 100 100">
+                    <defs>
+                        <path class="demo__num-path-1" d="M40,28 55,22 55,78" />
+                        <path class="demo__num-join-1-2" d="M55,78 55,83 a17,17 0 1,0 34,0 a20,10 0 0,0 -20,-10" />
+                        <path class="demo__num-path-2" d="M69,73 l-35,0 l30,-30 a16,16 0 0,0 -22.6,-22.6 l-7,7" />
+                        <path class="demo__num-join-2-3" d="M28,69 Q25,44 34.4,27.4" />
+                        <path class="demo__num-path-3" d="M30,20 60,20 40,50 a18,15 0 1,1 -12,19" />
+                    </defs>
+                    <path class="demo__numbers-path" d="M-10,20 60,20 40,50 a18,15 0 1,1 -12,19 
+                    Q25,44 34.4,27.4
+                    l7,-7 a16,16 0 0,1 22.6,22.6 l-30,30 l35,0 L69,73 
+                    a20,10 0 0,1 20,10 a17,17 0 0,1 -34,0 L55,83 
+                    l0,-61 L40,28" />
+                </svg>
+            </div>
+        </div>
+        <!--// timer //-->
+        <!-- quize -->
+        <div class="quiz-body" id="quiz-body-id">
+            <button id="btn-start-quiz" class="button-start-quize">تحليل وتصميم نظم المعلومات</button>
+            <button id="btn-start-quiz-one" class="button-start-quize">مبادئ المحاسبة الأدارية</button>
+            <button id="btn-start-quiz-two" class="button-start-quize">لغة اجنبية</button>
+            <button id="btn-start-quiz-three" class="button-start-quize">إدارة الأنتاج والعمليات</button>
+            <button id="btn-start-quiz-four" class="button-start-quize">مبادئ الأدارة المالية</button>           
+             <button id="btn-start-quiz-five" class="button-start-quize">البنية التحتية لتكنولوجيا المعلومات</button>
+
+
+
+
+            
+
+            <section id="quiz-page" class="quiz-page">
+                <div class="quistion-container">
+                    <p id="text-question-id" style="color:rgb(219, 213, 213);">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, accusamus! Perspiciatis
+                        voluptatibus sed explicabo quaerat impedit non neque, placeat enim deserunt quam saepe
+                        praesentium earum! Veritatis quae ullam labore deserunt.
+                    </p>
+                </div>
+                <!-- card -->
+                <div class="card-containere">
+                    <card class="card carde-1">
+                        <button class="card-button">
+                            <iconify-icon icon="mdi:checkbox-marked-circle-plus-outline"></iconify-icon>
+                            <p class="card-text">
+                                reppons
+                            </p>
+                        </button>
+                    </card>
+                    <card class="card carde-2">
+                        <button class="card-button">
+                            <iconify-icon icon="mdi:checkbox-marked-circle-plus-outline"></iconify-icon>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error.
+                            </p>
+                        </button>
+                    </card>
+                    <card class="card carde-3">
+                        <button class="card-button">
+                            <iconify-icon icon="mdi:checkbox-marked-circle-plus-outline"></iconify-icon>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error.
+                            </p>
+                        </button>
+                    </card>
+                    <card class="card carde-4">
+                        <button class="card-button">
+                            <iconify-icon icon="mdi:checkbox-marked-circle-plus-outline"></iconify-icon>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error.
+                            </p>
+                        </button>
+                    </card>
+                </div>
+                <!-- card -->
+
+                <div id="progressTime">
+                    <div id="BarTime"></div>
+                </div>
+            </section>
+        </div>
+
+        <!--// quize //-->
+
+        <!-- result -->
+        <div class="resulte-body" id="resulte-body-id">
+            <section id="resulte-section-id">
+                <div class="d-flex justify-content-around">
+                    <div class="result" id="text-result-id">لا توجد بيانات</div>
+                    <button id="btn-again-quiz" class="button-start-quize try-agin">حاول مرة أخرى</button>
+                </div>
+
+
+                <div id="result-container" class="result-container" style="background:rgb(0 0 0 / 31%)">
+                    <!-- <div class="question-container"> 
+                <div class="index">23</div> 
+                <div class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloremque dolorem, corrupti sit ipsa rerum c</div>
+            </div>
+            <div class="responce-container">
+                <iconify-icon icon="material-symbols:note-alt-rounded" style="color: green;" ></iconify-icon>
+                <div class="respons">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloremque dolore</div>
+            </div>
+            <div class="line"></div> -->
+                </div>
+            </section>
+        </div>
+        <!--// result //-->
     </div>
-    <div id="co-one" class="container">
-      <table class="styled-table" style="width: 100%">
-        <thead>
-          <tr>
-            <th>اليوم</th>
-            <th>الدرس</th>
-            <th>النتيجة</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th id="th">2/3</th>
-            <th id="th">Best settings for VS-Code & React</th>
-            <th id="th">1/1</th>
-          </tr>
-          <tr>
-            <th id="th">2/4</th>
-            <th id="th">#2.2 Create React App</th>
-            <th id="th">2/2</th>
-          </tr>
 
-          <tr>
-            <th id="th">2/5</th>
-            <th id="th">how react works</th>
+<script src="../jquery-3.6.0.min.js">
 
-            <th id="th">3/3</th>
-          </tr>
-          <tr>
-            <th id="th">2/6</th>
-            <th id="th">how to share react</th>
+</script>
+    <script src="js/quize/result.js"></script>
+    <script src="js/time-bar.js"></script>
+    <script src="js/container-page/progress-title.js"></script>
+    <script src="js/helper/variable.js"></script>
+    <script src="js/classes/question.js"></script>
+    
+    <script src="js/data/data.js"></script>
+    <script src="js/quize/show.js"></script>
+    <script src="js/quize/time-bar.js"></script>
+    <script src="js/helper/functions.js"></script>
+    <script src="js/quize/play.js"></script>
+    <script src="js/quize/animation.js"></script>
+    <script src="js/quize/game-over.js"></script>
+</body>
 
-            <th id="th">4/4</th>
-          </tr>
-          <tr>
-            <th id="th">2/7</th>
-            <th id="th"> How to update React project?</th>
-
-            <th id="th">5/5</th>
-          </tr>
-          <tr>
-            <th id="th">2/8</th>
-            <th id="th">الربع السادس => سورة سباء<b>(23:9)</b></th>
-
-            <th id="th">6/0</th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!--// DAY-ONE //-->
-    <hr />
-
-    <!-- DAY-TWO -->
-
-    <!--// DAY-TWO //-->
-
-    <script src="./jquery-3.6.0.min.js"></script>
-    <script>
-      $("#qa-one").click(function () {
-        $("#co-one").slideToggle();
-      });
-
-      $("#qa-two").click(function () {
-        $("#co-two").slideToggle();
-      });
-    </script>
-  </body>
 </html>
