@@ -4,86 +4,180 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP</title>
-    
     <style>
- body {
-	font-family: 'Open Sans', sans-serif;
-	direction: rtl;
-    background-repeat: no-repeat;
-   background-size: cover;
-   background: linear-gradient(45deg,rgb(0, 0, 113),rgb(96, 0, 0));
-}
-
-/* HEADER */
-
-.header{
-    margin-top: 20px;
-}
-span{
-    color: rgba(255, 255, 255, 0.603);
-    font-size: 40px;
-    margin-right: 610px;
-   
-}
-span:hover{
-    color: rgb(209, 204, 204)
-
-}
-/* //HEADER// */
-     /* CONTAINER */
-.container{
-    margin-top: 40px;
-    margin-right:8-px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    color: rgb(236, 236, 236);
-    outline: none;
-    cursor: pointer;
-    box-shadow: 0 0 50px rgb(0 0 0 / 50%);
-    height: 600px;
-}
-
-/* TABLE */
-.styled-table{
-    color: rgb(207, 204, 204);
-    border: none;
-    border-radius: 15px;
-    
-    
-}
-
-    .styled-table tr th{
-        font-size: 50px;
-    background: rgb(3 3 54);    
-    border:solid 1px rgb(3 3 54); 
-    border-radius: 20px;
+      body {
+       font-family: 'Open Sans', sans-serif;
+       direction: rtl;
+         background-repeat: no-repeat;
+        background-size: cover;
+        background: linear-gradient(45deg,rgb(0, 0, 113),rgb(96, 0, 0));
+     }
+     
+     /* HEADER */
+     nav {
+       padding-top: 20px;
+       padding-bottom: 20px;
+       top: 0;
+       position: fixed;
+       display: flex;
+       width: 100%;
+       z-index: 1000;
+       color: rgb(236, 236, 236);
+       justify-content: space-around;
+       transition: 1.5s;
+       align-items: center;
+     }
+     nav ul {
+       display: flex;
+       align-items: center;
+     
+     }
+     nav ul li {
+       list-style: none;
+     }
+     nav ul li a {
+       color: #2e2e2e;
+       cursor: pointer;
+       transition: .5s;
+       text-decoration: none;
+       color: rgb(236, 236, 236);
+       font-size: 20px;
+       font: bold;
+     
+     }
+     nav ul li a:hover {
+       color: rgb(236, 236, 236);
+       border-radius: 5px;
+       background: rgb(39, 39, 223)
+     }
+     .header{
+         margin-top: 20px;
+     }
+     span{
+         color: rgba(255, 255, 255, 0.603);
+         font-size: 40px;
+         margin-right: 610px;
         
-    }
-   
-tbody tr #th {
-    font-size: 35px;
-    background: #600000;
-    height: 70px;
-    border:solid 1px #600000; 
-}
+     }
+     span:hover{
+         color: rgb(209, 204, 204)
+     
+     }
+     /* //HEADER// */
+          /* CONTAINER */
+     .container{
+         margin-top: 40px;
+         margin-right:8-px;
+         width: 100%;
+         border: none;
+         border-radius: 5px;
+         color: rgb(236, 236, 236);
+         outline: none;
+         cursor: pointer;
+         box-shadow: 0 0 50px rgb(0 0 0 / 50%);
+         height: 500px;
+     }
+     
+     /* TABLE */
+     .styled-table{
+         color: rgb(207, 204, 204);
+         border: none;
+         border-radius: 15px;
+         
+         
+     }
+     
+         .styled-table tr th{
+             font-size: 50px;
+         background: rgb(3 3 54);    
+         border:solid 1px rgb(3 3 54); 
+         border-radius: 20px;
+             
+         }
+         b{
+          color: rgb(5, 5, 71);    
 
-b{
-    color:rgb(3 3 54);    
-}
+         }
+        
+     tbody tr #th {
+         font-size: 40px;
+         background: #600000;
+         height: 70px;
+         border:solid 1px #600000; 
+     }
+     
+     #co-one{
+         display: none;
+     }
+     /* //TABLE //*/
+     
+     /* //CONTAINER/ */
+     
+     /* responseve */
+      @media screen and (max-width: 1400px) {
+        .container{
+         margin-top: 40px;
+         margin-right:8-px;
+         width: 100%;
+         border: none;
+         border-radius: 5px;
+         color: rgb(236, 236, 236);
+         outline: none;
+         cursor: pointer;
+         box-shadow: 0 0 50px rgb(0 0 0 / 50%);
+         height: 1000px;
+     }
+      
+        span{
+         font-size: 40px;
+         margin-right: 155px;
+        }
+     /* TABLE */
+     .styled-table{
+         color: rgb(207, 204, 204);
+         border: none;
+         border-radius: 15px;
+         
+         
+     }
+     
+         .styled-table tr th{
+           font-size: 40px;
+         background: rgb(3 3 54);    
+         border:solid 1px rgb(3 3 54); 
+         border-radius: 20px;
+             
+         }
+        
+     tbody tr #th {
+         font-size: 20px;
+         background: #600000;
+         height: 80px;
+         border:solid 1px #600000; 
+     }
+     
+     #co-one{
+         display: none;
+     }
+     nav ul li a {
+     font: bold;
+       margin-left: 45px;
+       font-size: 25px;
+     }
+     nav ul li  {
+       margin-top: -10px;
+     }
+     
 
-#co-one{
-    display: block;
-}
+    .header{
+      margin-bottom:50px;
 
-#co-two{
-    display: none;
-}
-
-/* //TABLE //*/
-
-/* //CONTAINER/ */
-    </style>
+     }
+  
+  
+    } 
+     /* //responseve// */
+         </style>
 
 </head>
 <body>
