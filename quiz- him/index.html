@@ -26,15 +26,18 @@
     <title>You Quiz</title>
     <style>
         body {
-            height: 557;
+          background: linear-gradient(45deg, rgb(0, 0, 113), rgb(96, 0, 0));
+            height: 900px;
             direction: rtl;
-            background: linear-gradient(45deg, rgb(0, 0, 113), rgb(96, 0, 0));
 background-repeat: no-repeat;
+        }
+        .page-container{
+height: 1000px;
         }
 
         ol.ul,li {
-            margin-right: 20px;
-          
+          margin-right: 20px;
+          font-size: 10px;
 
         }
 
@@ -68,14 +71,8 @@ background:linear-gradient(45deg, rgb(0, 0, 323), rgb(192, 54, 54));
             color: black;
         }
 
-        /* @media screen and (min-width: 700px) {
 
-            .page-container{
-height: 600px;
-}
-        } */
-
-        @media screen and (max-width: 1000px) {	
+        @media screen and (max-width: 767px) {	
 	
 	.card-containere .card{
         height:10px;
@@ -87,12 +84,32 @@ height: 600px;
 
 
     .page-container{
-        height: 500px;
+        height: 800px;
     }
+
+li{
+  width: 320px;
+	font-size:10px
 }
 
-
-
+.quiz-body{
+  margin-top: 50px;
+}
+.quiz-body .start {
+  margin: 20px;
+	margin: auto;
+	width: 150px;
+	padding: 20px 2%;
+	border: none;
+	border-radius: 5px;
+	color: #dfd8d8;
+	background: linear-gradient(45deg, rgb(0, 0, 323), rgb(157, 172, 132));
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 50px rgb(0 0 0 / 50%);
+margin-bottom: 30px;
+}
+        }
         .progress-bar-container .bar {
             background: linear-gradient(45deg, rgb(0, 0, 113), rgb(219, 202, 202));
 
@@ -119,7 +136,7 @@ height: 600px;
 </head>
 
 <body>
-    <div class="page-container" style=" height:657px; direction: rtl;
+    <div class="page-container" style="direction: rtl;
     background: linear-gradient(45deg, rgb(0, 0, 113), rgb(96, 0, 0)); background-repeat: no-repeat;">
         <p class="progress-barr-title" id="progress-barr-title-id" style="color: rgb(199, 196, 196);">التعليمات</p>
         <!-- progress-bar-container -->
@@ -146,14 +163,14 @@ height: 600px;
         <div class="documentation-body" id="documentation-body-id">
             <section style="margin-left:30px;" id="documentation-section-id">
                 <ol>
-                    <li style="color: rgb(219, 217, 217); font-size: 35px;">هناك 3 مراحل يمكنك التنقل خلالها من خلال النقر على الأزرار
+                    <li style="color: rgb(219, 217, 217); font-size: 20px;">هناك 3 مراحل يمكنك التنقل خلالها من خلال النقر على الأزرار
                         الموجودة في الأعلى.</li>
-                    <li style="color: rgb(219, 217, 217);font-size: 35px;">كل سؤال له محدد حسب الصعوبة ، وتعتبر الإجابة ملغاة إذا
+                    <li style="color: rgb(219, 217, 217);font-size: 20px;">كل سؤال له محدد حسب الصعوبة ، وتعتبر الإجابة ملغاة إذا
                         تجاوزت الوقت المحدد</li>
-                    <li style="color: rgb(219, 217, 217);font-size: 35px;">في كل مرة تظهر الأسئلة بشكل عشوائي.</li>
-                    <li style="color: rgb(219, 217, 217);font-size: 35px;">بمجرد الانتهاء من جميع الأسئلة ، ستظهر النتائج في مكانها
+                    <li style="color: rgb(219, 217, 217);font-size: 20px;">في كل مرة تظهر الأسئلة بشكل عشوائي.</li>
+                    <li style="color: rgb(219, 217, 217);font-size: 20px;">بمجرد الانتهاء من جميع الأسئلة ، ستظهر النتائج في مكانها
                         المحدد.</li>
-                    <li style="color: rgb(219, 217, 217);font-size: 35px;">حظ سعيد.</li>
+                    <li style="color: rgb(219, 217, 217);font-size: 20px;">حظ سعيد.</li>
                 </ol>
             </section>
         </div>
@@ -189,12 +206,12 @@ height: 600px;
         <!--// timer //-->
         <!-- quize -->
         <div class="quiz-body" id="quiz-body-id">
-            <button id="btn-start-quiz" class="button-start-quize">أبدء!</button>
-            <button id="btn-start-quiz-one" class="button-start-quize">نن</button>
-            <button id="btn-start-quiz-two" class="button-start-quize">ااا</button>
-            <button id="btn-start-quiz-three" class="button-start-quize">لل</button>
-            <button id="btn-start-quiz-four" class="button-start-quize">ببي</button>           
-             <button id="btn-start-quiz-five" class="button-start-quize">ببي</button>
+            <button id="btn-start-quiz" class="start">تحليل وتصميم نظم المعلومات</button>
+            <button id="btn-start-quiz-one" class="start">مبادئ المحاسبة الأدارية</button>
+            <button id="btn-start-quiz-two" class="start">لغة اجنبية</button>
+            <button id="btn-start-quiz-three" class="start">إدارة الأنتاج والعمليات</button>
+            <button id="btn-start-quiz-four" class="start">مبادئ الأدارة المالية</button>           
+             <button id="btn-start-quiz-five" class="start">البنية التحتية لتكنولوجيا المعلومات</button>
 
 
 
@@ -279,7 +296,9 @@ height: 600px;
         <!--// result //-->
     </div>
 
-<script src="../jquery-3.6.0.min.js"></script>
+<script src="../jquery-3.6.0.min.js">
+
+</script>
     <script src="js/quize/result.js"></script>
     <script src="js/time-bar.js"></script>
     <script src="js/container-page/progress-title.js"></script>
